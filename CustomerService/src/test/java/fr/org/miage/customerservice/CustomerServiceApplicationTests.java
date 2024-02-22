@@ -1,10 +1,10 @@
-package fr.org.miage.bdd;
+package fr.org.miage.customerservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BddApplicationTests {
+class CustomerServiceApplicationTests {
 
     @Test
     void contextLoads() {

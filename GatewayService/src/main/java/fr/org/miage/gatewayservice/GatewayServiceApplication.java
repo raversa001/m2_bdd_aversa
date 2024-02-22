@@ -1,4 +1,4 @@
-package fr.org.miage.bdd;
+package fr.org.miage.gatewayservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

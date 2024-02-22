@@ -1,13 +1,13 @@
-package fr.org.miage.customer;
+package fr.org.miage.customerservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CustomerServerApplication {
+public class CustomerServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CustomerServerApplication.class, args);
+        SpringApplication.run(CustomerServiceApplication.class, args);
     }
 
 }

@@ -1,10 +1,10 @@
-package fr.org.miage.customer;
+package fr.org.miage.gatewayservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CustomerServerApplicationTests {
+class BddApplicationTests {
 
     @Test
     void contextLoads() {

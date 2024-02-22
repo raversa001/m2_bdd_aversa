@@ -1,4 +1,4 @@
-package fr.org.miage.eureka;
+package fr.org.miage.eurekaserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

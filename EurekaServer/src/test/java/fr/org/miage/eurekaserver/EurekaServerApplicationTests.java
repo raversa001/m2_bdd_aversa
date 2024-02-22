@@ -1,4 +1,4 @@
-package fr.org.miage.eureka;
+package fr.org.miage.eurekaserver;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
