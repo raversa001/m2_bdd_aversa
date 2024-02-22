@@ -1,16 +1,26 @@
 package fr.org.miage.account.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import lombok.Getter;
-import lombok.Setter;
+import fr.org.miage.account.enums.CurrencyType;
+import fr.org.miage.account.models.Customer;
+import jakarta.persistence.*;
+import lombok.*;
+
+import java.time.LocalDate;
 
 @Setter
 @Getter
 @Entity
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Account {
-
     @Id
-    private Long id;
-
+    @GeneratedValue(strategy = GenerationType.UUID)
+    private String id;
+    private Double balance;
+    private LocalDate dateCreated;
+    private CurrencyType currencyType;
+    private Long customerId;
+    @Transient
+    private Customer customer;
 }
