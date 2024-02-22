@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>fr.org.miage</groupId>
-    <artifactId>bdd</artifactId>
+    <artifactId>Gateway</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>bdd</name>
     <description>bdd</description>
