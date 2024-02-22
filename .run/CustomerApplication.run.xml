@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="CustomerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <module name="Customer" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="fr.org.miage.customer.CustomerApplication" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
