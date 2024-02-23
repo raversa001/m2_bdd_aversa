@@ -1,7 +1,7 @@
 package fr.org.miage.customer.controllers;
 
-import fr.org.miage.customer.entities.Customer;
-import fr.org.miage.customer.repositories.CustomerRepository;
+import fr.org.miage.customer.dtos.CustomerDTO;
+import fr.org.miage.customer.services.ICustomerService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,19 +10,19 @@ import java.util.List;
 
 @RestController
 public class CustomerController {
-    CustomerRepository customerRepository;
+    ICustomerService customerService;
 
-    public CustomerController(CustomerRepository customerRepository) {
-        this.customerRepository = customerRepository;
+    public CustomerController(ICustomerService customerService) {
+        this.customerService = customerService;
     }
 
     @GetMapping("/customer/{id}")
-    public Customer getCustomerById(@PathVariable Long id) {
-        return customerRepository.findById(id).orElse(null);
+    public CustomerDTO getCustomerById(@PathVariable Long id) {
+        return customerService.findById(id);
     }
 
     @GetMapping("/customers")
-    public List<Customer> getAllCustomers() {
-        return customerRepository.findAll();
+    public List<CustomerDTO> getAllCustomers() {
+        return customerService.findAll();
     }
 }
