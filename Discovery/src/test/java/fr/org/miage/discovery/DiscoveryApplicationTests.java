@@ -1,10 +1,10 @@
-package fr.org.miage.eurekaserver;
+package fr.org.miage.discovery;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class EurekaServerApplicationTests {
+class DiscoveryApplicationTests {
 
 	@Test
 	void contextLoads() {
